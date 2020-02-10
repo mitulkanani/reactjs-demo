@@ -1,0 +1,38 @@
+@mixin ele-font($weight) {
+    font-weight: $weight;
+}
+@mixin media-large-tablet {
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        @content;
+    }
+}
+@mixin media-small-tablet {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        @content;
+    }
+}
+@mixin media-landscape-mobile {
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        @content;
+    }
+}
+@mixin media-lg {
+    @media (max-width: 1199.98px) {
+        @content;
+    }
+}
+@mixin media-mobile {
+    @media (max-width: 575.98px) {
+        @content;
+    }
+}
+@mixin media-mobile-medium {
+    @media (max-width: 360px) {
+        @content;
+    }
+}
+@mixin media-mobile-small {
+    @media (max-width: 320px) {
+        @content;
+    }
+}

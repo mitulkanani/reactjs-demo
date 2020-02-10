@@ -1,0 +1,54 @@
+.container {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   width: 1330px;
+   max-width: 100%;
+   @media (min-width: 768px) {
+      width: 750px;
+   }
+   @media (min-width: 992px) {
+      width: 970px;
+   }
+   @media (min-width: 1200px) {
+      width: 1170px;
+   }
+}
+.main-content {
+   height: calc(100vh - 118px);
+   overflow: auto;
+}
+.header-container {
+   padding: 15px 0 15px;
+   width: 100%;
+   background: #fff;
+   // position: fixed;
+   // z-index: 999;
+   // left: 0;
+   // top: 0;
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 7px 7px 0px;
+   .header-logo {
+      font-size: 24px;
+      font-family: cursive;
+   }
+}
+.footer-container {
+   padding: 15px 0 15px;
+}
+::-webkit-scrollbar {
+   width: 10px;
+   height: 10px;
+}
+::-webkit-scrollbar-thumb {
+   min-width: 70px;
+   min-height: 70px;
+   border-radius: 50px;
+   background: rgba(0, 0, 0, .13);
+}
+::-webkit-scrollbar-thumb:hover {
+   background: rgba(0, 0, 0, .23)
+}
+::-webkit-scrollbar-track {
+   background: transparent
+}

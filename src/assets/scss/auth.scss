@@ -1,0 +1,104 @@
+.page-container {
+    // background-image: url('./../images//pagebanner.jpg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url('./../images//pagebanner.jpg');
+    .background-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: linear-gradient(-5deg,rgba(61,80,199, 0.8),#231d3b);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+        min-height: 100vh;
+    }
+    .form-container {
+        background-color: #fff;
+        padding: 15px;
+        width: 370px;
+        border-radius: 4px;
+        box-shadow: 0 6px 6px -3px rgba(0,0,0,.2),0 10px 14px 1px rgba(0,0,0,.14),0 4px 18px 3px rgba(0,0,0,.12);
+        .app-logo {
+            width: 140px;
+        }
+        .login-form-forgot {
+            float: right;
+        }
+        .login-form-button {
+            width: 100%;
+        }
+    }
+}
+.auth-modal {
+    .ant-modal-footer {
+        display: none;
+    }
+}
+.ant-modal {
+    @include media-small-tablet {
+        width: auto !important;
+        margin: 0 20px;
+    }
+}
+.choose-radio-btn {
+    min-width: 100px;
+}
+.edit-profile-container {
+    background-color: #f4f5f8;
+    position: relative;
+    min-height: 100%;
+    .profile-image-card {
+        width: 240px;
+        img {
+            width: 100%;
+            height: 200px;
+            border-radius: 6px;
+            object-fit: cover;
+        }
+        @include media-lg {
+            margin: 0 auto;
+        }
+        @include media-mobile {
+            margin-top: 45px;
+            margin-bottom: 40px;
+        }
+    }
+    .change-password-text {
+        position: absolute;
+        bottom: 40px;
+        left: 50px;
+        cursor: pointer;
+        z-index: 9;
+        @include media-lg {
+            bottom: auto;
+            left: 0; 
+        }
+    }
+}
+.app-card {
+    box-shadow: 0 0 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+}
+.profile-border-left {
+    @include media-lg {
+        border-left: 0;
+        padding-left: 0;
+    }
+}
+.enthusiast-form {
+    min-height: 420px;
+    @include media-large-tablet {
+        min-height: auto;
+    }
+}
+.loader-absolute-class {
+    position: absolute;
+    right: 50%;
+    top: 20%;
+}
